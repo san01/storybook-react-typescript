@@ -1,0 +1,27 @@
+>npm install --global yarn
+>npm i react-aria // https://react-spectrum.adobe.com/react-aria/hooks.html
+>npm i react-stately
+>npm i styled-component
+>npm i styled-system
+>npm i react-router-dom
+>npm i react-form
+>npm i typescript-eslint
+>npm i 
+
+
+================
+1. Using aliases like @ for absolute paths in a React project can make imports cleaner, 
+especially for deeply nested files. Here's how to set it up and use it effectively:
+For Create React App (CRA)
+If you're using CRA, you can configure path aliases using a tool like craco or with a jsconfig.json or 
+tsconfig.json file:
+Create a jsconfig.json (for JavaScript) or tsconfig.json (for TypeScript) in the root of your 
+project:
+"compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@utils/*": ["utils/*"]
+    }
+}
+import Header from '@components/Header';
